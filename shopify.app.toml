@@ -2,7 +2,7 @@
 
 client_id = "d68bf0aa3df4a0499df6e3350af65916"
 name = "Shipduniya"
-application_url = "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/app"
+application_url = "https://shopify-app-nu-ecru.vercel.app/"
 embedded = true
 
 [build]
@@ -12,32 +12,29 @@ dev_store_url = "testmyapp11.myshopify.com"
 [webhooks]
 api_version = "2026-01"
 
-  # App uninstall
   [[webhooks.subscriptions]]
-  topics = ["app/uninstalled"]
+  topics = [ "app/uninstalled" ]
   uri = "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/webhooks/app_uninstalled"
 
-  # Orders
   [[webhooks.subscriptions]]
-  topics = ["orders/create"]
+  topics = [ "orders/create" ]
   uri = "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/webhooks/orders_create"
 
   [[webhooks.subscriptions]]
-  topics = ["orders/updated"]
-  uri = "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/webhooks/orders_updated"
-
-  # --- GDPR / Compliance (MANDATORY) ---
-  [[webhooks.subscriptions]]
   uri = "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/webhooks/customers_data_request"
-  compliance_topics = ["customers/data_request"]
+  compliance_topics = [ "customers/data_request" ]
 
   [[webhooks.subscriptions]]
   uri = "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/webhooks/customers_redact"
-  compliance_topics = ["customers/redact"]
+  compliance_topics = [ "customers/redact" ]
 
   [[webhooks.subscriptions]]
   uri = "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/webhooks/shop_redact"
-  compliance_topics = ["shop/redact"]
+  compliance_topics = [ "shop/redact" ]
+
+  [[webhooks.subscriptions]]
+  topics = [ "orders/updated" ]
+  uri = "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/webhooks/orders_updated"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
@@ -47,5 +44,5 @@ use_legacy_install_flow = false
 
 [auth]
 redirect_urls = [
-  "https://doorships-service-267214421211.asia-south1.run.app/api/shopify/auth/callback"
+  "https://shopify-app-nu-ecru.vercel.app/auth/callback"
 ]

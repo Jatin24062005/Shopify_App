@@ -43,11 +43,7 @@ export default function Orders() {
                   <s-table-cell>
                     <s-badge tone="attention">Ready to ship</s-badge>
                   </s-table-cell>
-                  <s-table-cell>
-                    <s-button size="slim" tone="primary">
-                      Create Shipment
-                    </s-button>
-                  </s-table-cell>
+
                 </s-table-row>
 
                 <s-table-row>
@@ -59,11 +55,6 @@ export default function Orders() {
                   <s-table-cell>
                     <s-badge tone="info">In transit</s-badge>
                   </s-table-cell>
-                  <s-table-cell>
-                    <s-button size="slim">
-                      Create Shipment
-                    </s-button>
-                  </s-table-cell>
                 </s-table-row>
 
                 <s-table-row>
@@ -74,11 +65,6 @@ export default function Orders() {
                   <s-table-cell>₹899</s-table-cell>
                   <s-table-cell>
                     <s-badge tone="success">Delivered</s-badge>
-                  </s-table-cell>
-                  <s-table-cell>
-                    <s-button size="slim" disabled>
-                      Shipped
-                    </s-button>
                   </s-table-cell>
                 </s-table-row>
               </s-table-body>
