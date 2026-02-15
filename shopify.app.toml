@@ -2,7 +2,7 @@
 
 client_id = "d68bf0aa3df4a0499df6e3350af65916"
 name = "Shipduniya"
-application_url = "https://shopify-app-nu-ecru.vercel.app/"
+application_url = "https://shipduniya-embedded-app-nu-ecru.vercel.app/"
 embedded = true
 
 [build]
@@ -44,5 +44,5 @@ use_legacy_install_flow = false
 
 [auth]
 redirect_urls = [
-  "https://shopify-app-nu-ecru.vercel.app/auth/callback"
+  "https://shipduniya-embedded-app-nu-ecru.vercel.app//auth/callback"
 ]
