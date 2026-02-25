@@ -71,3 +71,266 @@
     padding-bottom: 1rem;
   }
 }
+
+/* ===== PAGE BACKGROUND ===== */
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  overflow: hidden;
+}
+
+/* soft grid */
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* shopify green glow */
+.bgGlow {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(0,230,118,0.25), transparent 70%);
+  top: -120px;
+  right: -120px;
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+/* ===== CARD ===== */
+.card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1020px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 44px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 48px;
+  box-shadow:
+    0 40px 80px rgba(0,0,0,0.08),
+    0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ===== LEFT ===== */
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Brand */
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+}
+
+.brandRow h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #020617;
+}
+
+.brandRow span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Text */
+.heading {
+  margin-top: 28px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #020617;
+  line-height: 1.25;
+}
+
+.subtext {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* Form */
+.form {
+  margin-top: 30px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.input {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #00e676;
+  box-shadow: 0 0 0 3px rgba(0,230,118,0.25);
+}
+
+.button {
+  margin-top: 16px;
+  width: 100%;
+  background: #00e676;
+  color: #052e16;
+  border: none;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom:  25px;
+  cursor: pointer;
+}
+
+/* Shopify trust */
+.shopifyRow {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.shopifyRow img {
+  width: 22px;
+}
+
+/* Features */
+.features {
+  margin-top: 28px;
+  display: grid;
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+}
+
+/* ===== RIGHT VISUAL ===== */
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.visualCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, #ffffff, #f8fafc);
+  border: 1px dashed #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.visualCard p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #020617;
+}
+
+.visualCard span {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #64748b;
+}
+/* ===== BACKGROUND DEPTH ===== */
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Shopify green glow (top-right) */
+.bgGlow {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 230, 118, 0.35),
+    transparent 70%
+  );
+  top: -140px;
+  right: -140px;
+  filter: blur(70px);
+  pointer-events: none;
+}
+
+/* Secondary glow (bottom-left) */
+.bgGlowAlt {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.25),
+    transparent 70%
+  );
+  bottom: -140px;
+  left: -140px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+.overlay {
+  position: absolute;
+  width: 60%;
+  bottom: 24px;
+  right: 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 3px solid #ffffff;
+}
